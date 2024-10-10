@@ -6,6 +6,9 @@ const users = []; // In-memory users storage
 const register = async (req, res, next) => {
   try {
     const { username, password } = req.body;
+    if(!username || !password){
+      return res.status(400).json({ message: 'Please pass all th fields' });
+    }
     if (users.find(user => user.username === username)) {
       return res.status(400).json({ message: 'User already exists' });
     }
