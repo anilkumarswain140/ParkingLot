@@ -1,8 +1,8 @@
 const express = require('express');
 const cors = require('cors');
-const parkingRoutes = require('./routes/parkingRoutes');
-const authRoutes = require('./routes/authRoutes');
-const { errorHandler } = require('./utils/errorHandler');
+const parkingRoutes = require('./routes/parking-routes');
+const authRoutes = require('./routes/auth-routes');
+const { errorHandler } = require('./utils/error-handler');
 const rateLimit = require('express-rate-limit');
 const app = express();
 

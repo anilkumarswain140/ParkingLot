@@ -1,4 +1,4 @@
-const parkingService = require('../services/parkingService');
+const parkingService = require('../services/parking-service');
 
 const park = (req, res, next) => {
   try {

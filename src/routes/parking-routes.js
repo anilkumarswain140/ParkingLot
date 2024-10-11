@@ -1,6 +1,6 @@
 const express = require('express');
-const { park, getSlot, unpark } = require('../controllers/parkingController');
-const authMiddleware = require('../middlewares/authMiddleware');
+const { park, getSlot, unpark } = require('../controllers/parking-controller');
+const authMiddleware = require('../middlewares/auth-middleware');
 
 const router = express.Router();
 

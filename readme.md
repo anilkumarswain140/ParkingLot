@@ -4,6 +4,45 @@
 
 The Car Parking Lot REST API is a simple, in-memory service designed to manage car parking operations. It allows users to register, authenticate, park and unpark cars, and check slot availability. The parking lot size can be configured, and the application is built with robust features such as rate limiting to prevent abuse.
 
+
+### Getting Started
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/anilkumarswain140/ParkingLot.git
+   ```
+
+2. **Navigate to the project directory:**:
+
+    ```bash
+    cd car-parking-lot
+    ```
+  
+3. **Install dependencies:**:
+
+    ```bash
+    npm install 
+    ```
+
+4. **Create a .env file in the root directory and configure your settings:**
+
+    ```bash
+    PORT=3000  
+    PARKING_LOT_SIZE=5  
+    JWT_SECRET=your_jwt_secret_key  
+    ```
+
+5. **Start the server:**
+    ```bash
+    npm start
+    ```  
+The server will start running on the configured port, and you can begin using the API endpoints.
+
+## App is live on this URL
+
+https://parking-lot-taupe.vercel.app
+
+
 ### Key Features
 
 - **User Management**:
@@ -267,36 +306,7 @@ The API implements rate limiting, allowing a maximum of **100 requests per IP ad
 }
 
 ```
-### Getting Started
 
-1. **Clone the repository**:
-   ```bash
-   git clone <repository-url>
-Navigate to the project directory:
-
-
-cd car-parking-lot
-Install dependencies:  
-
-
-npm install 
-
-Create a .env file in the root directory and configure your settings:
-
-
-PORT=3000  
-PARKING_LOT_SIZE=5  
-JWT_SECRET=your_jwt_secret_key  
-
-Start the server:
-
-
-npm start  
-The server will start running on the configured port, and you can begin using the API endpoints.
-
-## App is live on this URL
-
-https://parking-lot-taupe.vercel.app
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
