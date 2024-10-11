@@ -38,6 +38,37 @@ The Car Parking Lot REST API is a simple, in-memory service designed to manage c
     ```  
 The server will start running on the configured port, and you can begin using the API endpoints.
 
+# Implementation of Vercel CI/CD Deployment for Node.js App
+
+auto deployment enabled with vercel plartform with Github actions
+
+This document outlines the steps to deploy a Node.js application using Vercel with Continuous Integration and Continuous Deployment (CI/CD).
+
+## Overview
+
+Vercel is a platform that automates the deployment of applications. By connecting your GitHub repository to Vercel, you can enable CI/CD, allowing your app to be deployed automatically upon code changes.
+
+## Steps to Deploy Node.js App to Vercel
+
+1. **Create a Vercel Account**:
+   - Sign up for an account at [Vercel](https://vercel.com).
+
+2. **Connect Your GitHub Repository**:
+   - In your Vercel dashboard, click on the "New Project" button.
+   - Select the GitHub repository that contains your Node.js application.
+
+3. **Configure Project Settings**:
+   - During the setup, Vercel will automatically detect the framework and settings for your Node.js app.
+   - Review the configurations, such as build settings and environment variables, and adjust them if necessary.
+
+4. **Deploy Your App**:
+   - Click the "Deploy" button to initiate the deployment.
+   - Vercel will build your application and deploy it automatically.
+
+5. **Automatic Deployments**:
+   - After the initial deployment, every push to your main branch (or the branch configured in Vercel) will trigger an automatic deployment, ensuring your application is always up-to-date.
+
+
 ## App is live on this URL
 
 https://parking-lot-taupe.vercel.app
